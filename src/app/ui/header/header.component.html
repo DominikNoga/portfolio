@@ -1,6 +1,5 @@
 <header class="app-header">
     <app-wrapper>
-        <app-nav></app-nav>
         <div id="hero">
             <img id="my-image" src="me.jpg" alt="">
             <section id="info">
@@ -13,7 +12,17 @@
                     I love exploring new technologies, and deliver complex projects from start to end. 
                 </p>
                 <div class="socials">
-                    
+                    @for (tile of socialTiles; track tile.title) {
+                        <a 
+                            class="icon-tile" 
+                            [href]="tile.link" 
+                            target="_blank"
+                            [download]="tile.download"
+                            [ngStyle]="{ '--hover-shadow-color': tile.color }">
+                            <fa-icon [icon]="tile.icon" class="social-icon" [ngStyle]="{color: tile.color}"></fa-icon>
+                            <span>{{ tile.title }}</span>
+                        </a>
+                    }
                 </div>
             </section>
         </div>
