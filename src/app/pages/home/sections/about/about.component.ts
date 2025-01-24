@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { WrapperComponent } from '../../ui/wrapper/wrapper.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGraduationCap as educationIcon, faUser as bioIcon, faBriefcase as expIcon } from '@fortawesome/free-solid-svg-icons'
+import { WrapperComponent } from '../../../../ui/wrapper/wrapper.component';
 
 @Component({
   selector: 'app-about',
