@@ -4,4 +4,8 @@
     color: white;
     background-color: $bg-dark-color;
     min-height: 100vh;
+    .content {
+        display: grid;
+        place-items: center;
+    }
 }

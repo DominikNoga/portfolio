@@ -1,3 +1,30 @@
 @import '../../../../../styles/app-mixins';
 @import '../../../../../styles/app-variables';
 
+#about {
+    #about-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        .about-tile {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 18px;
+            background-color: $container-dark-color;
+            .tile-title {
+                font-size: 26px;
+                display: flex;
+                flex-direction: row;
+                gap: .5rem;
+                color: $primary-color;
+            }
+        }
+
+        .bio-tile {
+            grid-column: 1/-1;    
+        }
+    }
+    margin-bottom: 50vh;
+}
