@@ -36,15 +36,15 @@ export class ContactComponent {
           'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
         )
         .then(
-          (response) => {
+          () => {
             alert('Your message has been sent successfully!');
             this.contactForm.reset();
-          },
-          (error) => {
+          }
+        ).catch(
+          (error: unknown) => {
             alert('Oops! Something went wrong. Please try again later.');
             console.error('EmailJS error:', error);
-          }
-        );
+          });
     }
   }
 }
