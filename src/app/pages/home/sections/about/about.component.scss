@@ -13,6 +13,9 @@
             align-items: center;
             font-size: 18px;
             background-color: $container-dark-color;
+            width: 100%;
+            height: fit-content;
+
             .tile-title {
                 font-size: 26px;
                 display: flex;
@@ -20,14 +23,12 @@
                 gap: .5rem;
                 color: $primary-color;
             }
+
             .tile-content {
                 width: 100%;
                 padding: 1rem;
             }
-        }
 
-        .exp-tile {
-            width: 100%;
             .tile-content {
                 display: flex;
                 flex-direction: column;
@@ -53,26 +54,28 @@
             .company-name {
                 font-size: 18px;
             }
+
+            .sub-title {
+                margin: .5rem 0;
+            }
         }
 
         .technology-list {
-            margin: .5rem 0;
+            margin-top: .5rem;
             @include flex-layout(row, $gap: .5rem);
-            
+            flex-wrap: wrap;
+
             .technology-tile {
                 background-color: $link-color;
                 border-radius: .3rem .5rem;
                 padding: .5rem;
                 color: black;
                 $init-bs: 0 0 .25rem rgba(white, .3);
-                $after-bs: 0 0 .5rem rgba(white, .3);
-                @include simple-transition(box-shadow, .3s, $init-bs, $after-bs);
-                // @include hover-effect {
-                //     box-shadow: 0 0 .5rem rgba(white, .3);
-                // }
+                $after-bs: 0 0 .7rem rgba(white, .5);
+                @include simple-transition(box-shadow, .3s, $init-bs, $after-bs, $cursor: default);
             }
         }
-       
+
         .flex-space-wrapper {
             display: flex;
             flex-direction: row;
@@ -83,7 +86,7 @@
         }
 
         .bio-tile {
-            grid-column: 1/-1;    
+            grid-column: 1/-1;
         }
     }
 }

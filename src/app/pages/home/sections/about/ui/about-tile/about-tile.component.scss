@@ -1,0 +1,80 @@
+@import "../../../../../../../styles/app-variables";
+@import "../../../../../../../styles/app-mixins";
+.about-tile {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    background-color: $container-dark-color;
+    width: 100%;
+    height: fit-content;
+
+    .tile-title {
+        font-size: 26px;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        color: $primary-color;
+    }
+
+    .tile-content {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .tile-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    a {
+        color: $link-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    #date {
+        font-size: 15px;
+        color: rgb(177, 177, 177);
+    }
+
+    #job-description {
+        font-size: 16px;
+    }
+
+    .company-name {
+        font-size: 18px;
+    }
+
+    .sub-title {
+        margin: 0.5rem 0;
+    }
+}
+
+.technology-list {
+    margin-top: 0.5rem;
+    @include flex-layout(row, $gap: 0.5rem);
+    flex-wrap: wrap;
+
+    .technology-tile {
+        background-color: $link-color;
+        border-radius: 0.3rem 0.5rem;
+        padding: 0.5rem;
+        color: black;
+        $init-bs: 0 0 0.25rem rgba(white, 0.3);
+        $after-bs: 0 0 0.7rem rgba(white, 0.5);
+        @include simple-transition(box-shadow, 0.3s, $init-bs, $after-bs, $cursor: default);
+    }
+}
+
+.flex-space-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 100%;
+}
