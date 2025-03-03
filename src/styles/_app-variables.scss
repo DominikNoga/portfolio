@@ -2,7 +2,7 @@
 
 $theme-black: #3c3c3c;
 $theme-blue: #1891ac;
-$theme-light-blue: #d2ecf9;
+$link-color: #97c8e0; // #d2ecf9;
 $bg-grid-start: #111111;
 $bg-grid-end: #4c4c4c;
 // $bg-dark-color: rgb(25, 25, 34);
@@ -14,4 +14,6 @@ $primary-color: rgb(230, 150, 0);
 $accent-color: green;
 
 $primary-font: Roboto;
-$secondary-font: "Nunito", serif
+$secondary-font: "Nunito", serif;
+
+$default-gap: 1rem;

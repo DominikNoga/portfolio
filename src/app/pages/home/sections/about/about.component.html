@@ -20,15 +20,31 @@
                 <fa-icon [icon]="icons.exp" /> <span>Commercial Experience</span>
             </span>
             <div class="tile-content">
+                <div id="date">
+                    March 2023 - Now
+                </div>
                 <div class="flex-space-wrapper">
                     <span class="company-name">
-                        SolDevelo sp. z.o.o.
+                        <a target="_blank" href="https://soldevelo.com/">SolDevelo</a> | Junior Front-End Developer
                     </span>
-                    <img src="soldevelo-logo.png" class="company-logo" alt="">
                 </div>
-                <div class="flex-space-wrapper position-and-time">
-                    <span><strong>Junior Front-End Developer</strong></span>
-                    <span>March 2023 - Now</span>
+                <div id="job-description">
+                    During my time at SolDevelo, I have spent the most time on developing UI, and fixing various bugs. <br>
+                    Morover I have hosted developer trainings, prepared presentations for customers and reviewed the code of othere team members. <br>
+                    I have worked on 2 projects.
+                    The first one <a target="_blank" href="https://test.felten-group.com/en/products-solutions/pilotmes">Pilot</a>, was a MES system.
+                    Used for production management. It was used by large companies like Symrise or Eckart to monitor the various metrics 
+                    and producsts usage. Technologies that i was using here are:
+                    <div class="technology-list">
+                        @for (tech of technologies.pilot; track $index) {
+                            <span class="technology-tile">
+                                {{ tech }}
+                            </span>
+                        }
+                    </div>
+                    <br>
+                    The second project that i was developing, and that I am currently working in. Is <a href="https://openlmis.org/">OpenLMIS</a>.
+                    This is a logistics and information management system, used for health comodities tracking. It is deployed in 
                 </div>
             </div>
         </section>

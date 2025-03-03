@@ -1,0 +1,31 @@
+@import './app-variables';
+
+
+@mixin hover-effect($cursor: pointer) {
+    &:hover {
+        cursor: $cursor;
+        @content;
+    }
+}
+
+@mixin flex-layout($direction: column, $align-items: default, $justify-content: default, $gap: $default-gap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    gap: $gap;
+}
+
+@mixin simple-transition($property, $time: .3s, $before-transition-value, $after-transition-value, $cursor: pointer) {
+    transition: #{$property} $time;
+    #{$property}: $before-transition-value;
+    will-change: #{$property};
+
+    @include hover-effect($cursor) {
+        #{$property}: $after-transition-value;
+    }
+}
+
+@mixin opacity-transition($time: .3s, $before-transition-value: 1, $after-transition-value: .9, $cursor: pointer) {
+    @include addSimpleTransition(opacity, $time, $before-transition-value, $after-transition-value, $cursor);
+}

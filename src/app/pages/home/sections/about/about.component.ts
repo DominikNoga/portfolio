@@ -14,5 +14,13 @@ export class AboutComponent {
     education: educationIcon,
     exp: expIcon,
     skills: skillsIcon
-  }
+  };
+
+  readonly technologies: {
+    pilot: string[],
+    olmis: string[]
+  } = {
+    pilot: ['TypeScript', 'Angular', 'Less', 'Gulp'],
+    olmis: ['JavaScript', 'Angular.js', 'React.js', 'Scss', 'Webpack', 'Docker', 'Jenkins']
+  };
 }
