@@ -1,72 +1,20 @@
 <section id="about">
     <h1>About me</h1>
     <div id="about-content">
-        <!-- <app-skills-tile [icon]="icons.skills"></app-skills-tile> -->
         <section class="about-tile bio-tile">
-            <span class="tile-title">
-                <fa-icon [icon]="icons.skills" /> <span>My skills</span>
-            </span>
+            <app-skills-tile [icon]="icons.skills"></app-skills-tile>
         </section>
-        <!-- <app-education-tile [icon]="icons.education"></app-education-tile> -->
-        <section class="about-tile">
-            <span class="tile-title">
-                <fa-icon [icon]="icons.education" /> <span>Education</span>
-            </span>
-            <div class="tile-content">
-                <div id="date">
-                    October 2021 - January 2025
-                </div>
-                <h4 class="sub-title">Bachelor of Engineering</h4>
-                <div class="flex-space-wrapper">
-                    <span class="company-name">
-                        <a href="https://pg.edu.pl/">Gdańsk University of Technology</a> | Computer Science
-                    </span>
-                </div>
-            </div>
+        <section id="smaller-tiles">
+            <section class="about-tile">
+                <app-education-tile [icon]="icons.education"></app-education-tile>
+            </section>
+            <section class="about-tile">
+                <app-about-tile [icon]="icons.language" title="Languages">
+                </app-about-tile>
+            </section>
         </section>
         <section class="about-tile exp-tile">
-            <span class="tile-title">
-                <fa-icon [icon]="icons.exp" /> <span>Commercial Experience</span>
-            </span>
-            <div class="tile-content">
-                <div id="date">
-                    March 2023 - Now
-                </div>
-                <div class="flex-space-wrapper">
-                    <span class="company-name">
-                        <a target="_blank" href="https://soldevelo.com/">SolDevelo</a> | Junior Front-End Developer
-                    </span>
-                </div>
-                <div id="job-description">
-                    At SolDevelo, I have primarily focused on UI development and bug fixing, along with conducting
-                    developer training sessions, preparing client presentations, and reviewing code.
-
-                    <h4 class="sub-title">Projects</h4>
-                    <a target="_blank" href="https://test.felten-group.com/en/products-solutions/pilotmes">Pilot</a> - A
-                    Manufacturing Execution System (MES) used by major companies like Symrise and Eckart for production
-                    management and monitoring key metrics. My work involved front-end development and system
-                    enhancements using the following technologies:
-                    <div class="technology-list">
-                        @for (tech of technologies.pilot; track $index) {
-                        <span class="technology-tile">
-                            {{ tech }}
-                        </span>
-                        }
-                    </div>
-                    <br>
-                    <a href="https://openlmis.org/">OpenLMIS</a> - A logistics and information management system for
-                    tracking health commodities, deployed across 10+ African countries. I have contributed to front-end
-                    development, implementing new features and bug fixes. Additionally, I conducted developer training
-                    for teams in Africa and presented system updates to stakeholders. Technologies used:
-                    <div class="technology-list">
-                        @for (tech of technologies.olmis; track $index) {
-                        <span class="technology-tile">
-                            {{ tech }}
-                        </span>
-                        }
-                    </div>
-                </div>
-            </div>
+            <app-exp-tile [icon]="icons.exp"></app-exp-tile>
         </section>
     </div>
 </section>

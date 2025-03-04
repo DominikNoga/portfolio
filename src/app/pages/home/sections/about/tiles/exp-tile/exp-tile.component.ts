@@ -10,6 +10,13 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
   styleUrl: './exp-tile.component.scss'
 })
 export class ExpTileComponent {
-  title = 'Education';
+  title = 'Commercial Experience';
   icon = input.required<IconDefinition>();
+  readonly technologies: {
+    pilot: string[],
+    olmis: string[]
+  } = {
+    pilot: ['TypeScript', 'Angular', 'Less', 'Gulp'],
+    olmis: ['JavaScript', 'Angular.js', 'React.js', 'Scss', 'Webpack', 'Docker', 'Jenkins']
+  };
 }
