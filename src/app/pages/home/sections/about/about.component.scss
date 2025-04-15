@@ -11,6 +11,10 @@
             @include flex-layout();
         }
 
+        * {
+            width: 100%;
+        }
+
         .about-tile {
             padding: 1rem;
             display: flex;
@@ -18,8 +22,19 @@
             align-items: center;
             font-size: 18px;
             background-color: $container-dark-color;
-            width: 100%;
             height: fit-content;
+        }
+
+        .language-tile-content {
+            .language {
+                @include flex-layout(row, center);
+                &-flag {
+                    @include rectangle(80px, 45px)
+                }
+                &-name {
+                    font-size: $font-size-xl;
+                }
+            }
         }
 
         .bio-tile {

@@ -1,3 +1,7 @@
 <app-about-tile [icon]="icon()" [title]="title">
-
+  <section id="skills">
+    @for (skill of SKILLS; track skill.name) {
+      <app-skill [skill]="skill" />
+    }
+  </section>
 </app-about-tile>

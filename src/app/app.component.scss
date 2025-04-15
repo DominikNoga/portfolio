@@ -1,7 +1,7 @@
 @import '../styles/app-variables';
 
 .app-content {
-    color: white;
+    color: $font-primary;
     background-color: $bg-dark-color;
     min-height: 100vh;
     .content {

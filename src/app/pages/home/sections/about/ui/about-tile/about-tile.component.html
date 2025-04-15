@@ -1,5 +1,7 @@
 <span class="tile-title">
-    <fa-icon [icon]="icon()" /> <span>{{ title() }}</span>
+    <div class="tile-title-content">
+        <fa-icon [icon]="icon()" /> <span>{{ title() }}</span>
+    </div>
 </span>
 <div class="tile-content">
     <ng-content></ng-content>

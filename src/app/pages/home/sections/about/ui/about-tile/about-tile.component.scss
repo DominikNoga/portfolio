@@ -2,11 +2,15 @@
 @import "../../../../../../../styles/app-mixins";
 
 .tile-title {
-    font-size: 26px;
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
+    font-size: $font-size-xl;
     color: $primary-color;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    &-content {
+        @include flex-layout(row, center, $gap: .5rem);
+    }
 }
 
 .tile-content {
@@ -28,7 +32,8 @@
 }
 
 #job-description {
-    font-size: 16px;
+    font-size: $font-size-md;
+    font-family: $secondary-font;
 }
 
 .company-name {

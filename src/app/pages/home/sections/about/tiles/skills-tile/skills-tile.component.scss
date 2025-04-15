@@ -1,0 +1,8 @@
+@import "../../../../../../../styles/app-mixins";
+@import "../../../../../../../styles/app-variables";
+
+#skills {
+  @include flex-layout(row, center, center, $gap: 3 * $default-gap);
+  flex-wrap: wrap;
+  row-gap: 2 * $default-gap;
+}

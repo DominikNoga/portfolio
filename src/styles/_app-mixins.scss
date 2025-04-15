@@ -8,6 +8,15 @@
     }
 }
 
+@mixin rectangle($size-x, $size-y) {
+    width: $size-x;
+    height: $size-y;
+}
+
+@mixin square($size) {
+    @include rectangle($size, $size);
+}
+
 @mixin flex-layout($direction: column, $align-items: default, $justify-content: default, $gap: $default-gap) {
     display: flex;
     flex-direction: $direction;

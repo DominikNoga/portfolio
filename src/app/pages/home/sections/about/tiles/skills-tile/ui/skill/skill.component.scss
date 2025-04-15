@@ -1,0 +1,32 @@
+@import "../../../../../../../../../styles/app-mixins";
+@import "../../../../../../../../../styles/app-variables";
+
+$image-size: 125px;
+
+.skill {
+  @include flex-layout(column, center);
+  row-gap: 2px;
+  transition: text-shadow 0.3s ease, transform 0.4s ease;
+  z-index: 0;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+
+    .skill-name {
+      text-shadow: 0 0 1rem rgba(white, 0.9);
+    }
+  }
+
+  &-image {
+    width: $image-size;
+    height: $image-size;
+  }
+
+  &-name {
+    font-size: $font-size-lg;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease;
+    text-shadow: 0 0 0.4rem rgba(white, 0.3);
+  }
+}

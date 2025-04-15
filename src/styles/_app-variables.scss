@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 $theme-black: #3c3c3c;
 $theme-blue: #1891ac;
@@ -17,3 +17,20 @@ $primary-font: Roboto;
 $secondary-font: "Nunito", serif;
 
 $default-gap: 1rem;
+
+// Font colors
+$font-primary: #ffffff;
+$font-secondary: #e2e2e2;
+$font-tertiary: #999999;
+$font-muted: #777777;
+
+// Font sizes
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-2xl: 2rem;
+$font-size-3xl: 2.5rem;
+$font-size-4xl: 3rem;
+$font-size-5xl: 4rem;
