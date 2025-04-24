@@ -4,18 +4,20 @@ import {
   faGraduationCap as educationIcon,
   faBriefcase as expIcon,
   faToolbox as skillsIcon,
-  faLanguage as langIcon
+  faLanguage as langIcon,
+  faCertificate as certIcon
 }
 from '@fortawesome/free-solid-svg-icons'
 import { ExpTileComponent } from './tiles/exp-tile/exp-tile.component';
 import { EducationTileComponent } from './tiles/education-tile/education-tile.component';
 import { SkillsTileComponent } from './tiles/skills-tile/skills-tile.component';
 import { AboutTileComponent } from "./ui/about-tile/about-tile.component";
+import { CertificatesTileComponent } from "./tiles/certificates-tile/certificates-tile.component";
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [FontAwesomeModule, ExpTileComponent, EducationTileComponent, SkillsTileComponent, AboutTileComponent],
+  imports: [FontAwesomeModule, ExpTileComponent, EducationTileComponent, SkillsTileComponent, CertificatesTileComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
@@ -24,6 +26,7 @@ export class AboutComponent {
     education: educationIcon,
     exp: expIcon,
     skills: skillsIcon,
-    language: langIcon
+    language: langIcon,
+    certificates: certIcon
   };
 }

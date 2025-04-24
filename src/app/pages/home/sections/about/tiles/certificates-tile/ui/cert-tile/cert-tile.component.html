@@ -1,0 +1,10 @@
+<div class="cert-tile">
+  <div class="row">
+    <img class="cert-img" [src]="getImgPath(cert().img)" alt="cert.title">
+    <span class="cert-title">{{cert().title}}</span>
+  </div>
+  <p class="cert-description">
+    {{ cert().description }}
+  </p>
+  <a class="cert-link" [href]="cert().link" target="_blank">See certificate</a>
+</div>

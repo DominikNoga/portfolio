@@ -1,12 +1,15 @@
 <section id="about">
     <h1>About me</h1>
     <div id="about-content">
-        <section class="about-tile bio-tile">
+        <section class="about-tile skills-tile">
             <app-skills-tile [icon]="icons.skills"></app-skills-tile>
         </section>
         <section id="smaller-tiles">
             <section class="about-tile">
                 <app-education-tile [icon]="icons.education"></app-education-tile>
+            </section>
+            <section class="about-tile">
+                <app-certificates-tile [icon]="icons.certificates"></app-certificates-tile>
             </section>
         </section>
         <section class="about-tile exp-tile">

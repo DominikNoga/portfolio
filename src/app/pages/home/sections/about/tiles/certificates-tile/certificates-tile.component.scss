@@ -1,0 +1,26 @@
+@import "../../../../../../../styles/app-mixins";
+@import "../../../../../../../styles/app-variables";
+
+.cert-container {
+  @include flex-layout($align-items: center)
+}
+
+.pagination-dots {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}

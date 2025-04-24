@@ -1,0 +1,41 @@
+@import "../../../../../../../../../styles/app-mixins";
+@import "../../../../../../../../../styles/app-variables";
+
+.cert {
+  &-tile {
+    font-size: $font-size-md;
+    padding: 1rem 0.75rem 1.5rem 0.75rem;
+    box-shadow: 0 0 0.5rem rgba(white, 0.3);
+    border-radius: 0.5rem;
+
+    .row {
+      @include flex-layout(row, center);
+      margin-bottom: 0;
+    }
+  }
+
+  &-title {
+    font-size: $font-size-lg;
+    font-weight: bold;
+  }
+
+  &-img {
+    @include square(40px);
+  }
+
+  &-description {
+    color: $font-tertiary;
+    margin-top: 0;
+    padding: 0.25rem;
+  }
+
+  &-link {
+    background-color: $link-color;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: black;
+    $init-bs: 0 0 0.25rem rgba(white, 0.3);
+    $after-bs: 0 0 0.7rem rgba(white, 0.5);
+    @include simple-transition(box-shadow, 0.3s, $init-bs, $after-bs);
+  }
+}

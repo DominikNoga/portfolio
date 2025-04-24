@@ -1,0 +1,14 @@
+<app-about-tile [icon]="icon()" [title]="title">
+  <div class="cert-container">
+    <app-cert-tile [cert]="certificates[currentPage]" />
+    <div class="pagination-dots">
+      @for(cert of certificates; track cert.title) {
+        <span
+          class="dot"
+          [class.active]="$index === currentPage"
+          (click)="goToPage($index)">
+        </span>
+      }
+    </div>
+  </div>
+</app-about-tile>
