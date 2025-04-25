@@ -1,11 +1,10 @@
-export type Skill = {
-  img: string;
+export type Project = {
+  id: number;
   name: string;
-};
-
-export type Certificate = {
-  link: string;
-  img: string;
-  title: string;
   description: string;
+  img: string;
+  links: {
+    repo: string;
+    app: string;
+  };
 };
