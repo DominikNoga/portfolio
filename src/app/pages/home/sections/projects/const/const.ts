@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     id: 3,
     name: 'Diep.io Multiplayer Game',
     description: `A study project recreating a multiplayer experience similar to Diep.io. It runs on a local network, with a backend written in Python and a TypeScript frontend. Real-time gameplay is enabled through WebSocket communication.`,
-    img: 'diep-game.png',
+    img: 'diep.png',
     links: {
       repo: 'https://github.com/DominikNoga/diep.io-online/',
       app: '',
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
     description: `A Secret Santa planner for friend groups. Users can create an event, invite participants, and draw names anonymously. Each participant can add wishlists with links to help their Secret Santa choose a gift.`,
     img: 'gift-drawer.png',
     links: {
-      repo: 'https://gift-drawer.cyclic.app/',
+      repo: 'https://github.com/DominikNoga/gift-drawer-react',
       app: 'https://gift-drawer.cyclic.app/',
     },
   },

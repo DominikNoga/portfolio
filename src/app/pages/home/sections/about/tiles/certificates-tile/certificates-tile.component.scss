@@ -1,5 +1,5 @@
-@import "../../../../../../../styles/app-mixins";
-@import "../../../../../../../styles/app-variables";
+@import 'app-mixins';
+@import 'app-variables';
 
 .cert-container {
   @include flex-layout($align-items: center)

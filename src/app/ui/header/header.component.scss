@@ -1,8 +1,7 @@
-@import '../../../styles/app-variables';
-@import '../../../styles/app-mixins';
+@import 'app-mixins';
+@import 'app-variables';
 
 .app-header {
-    // background-image: linear-gradient(135deg, $bg-grid-start, $bg-grid-end);
     display: flex;
     flex-direction: column;
     align-items: center;
