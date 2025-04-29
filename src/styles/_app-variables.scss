@@ -2,21 +2,21 @@
 
 $theme-black: #3c3c3c;
 $theme-blue: #1891ac;
-$link-color: #97c8e0; // #d2ecf9;
+$link-color: #97c8e0;
+$link-color-hover: #b5e6ff;
 $bg-grid-start: #111111;
-$bg-grid-end: #4c4c4c;
-// $bg-dark-color: rgb(25, 25, 34);
-// $bg-dark-color: rgb(11, 11, 12);
-// $bg-dark-color: #121212;
 $bg-dark-color: #121212;
-$container-dark-color: #211b11; // #1a1919; //rgb(11, 11, 12);
+$container-dark-color: #211b11;
+$header-color: #211b11;
+
 $primary-color: rgb(230, 150, 0);
-$accent-color: green;
 
 $primary-font: Roboto;
 $secondary-font: "Nunito", serif;
 
+// gaps
 $default-gap: 1rem;
+$projects-gap: 20px;
 
 // Font colors
 $font-primary: #ffffff;

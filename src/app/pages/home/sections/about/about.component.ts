@@ -11,7 +11,6 @@ from '@fortawesome/free-solid-svg-icons'
 import { ExpTileComponent } from './tiles/exp-tile/exp-tile.component';
 import { EducationTileComponent } from './tiles/education-tile/education-tile.component';
 import { SkillsTileComponent } from './tiles/skills-tile/skills-tile.component';
-import { AboutTileComponent } from "./ui/about-tile/about-tile.component";
 import { CertificatesTileComponent } from "./tiles/certificates-tile/certificates-tile.component";
 
 @Component({

@@ -1,1 +1,24 @@
-<p>project-tile works!</p>
+<article>
+  <header>
+    {{ project().name }}
+  </header>
+  <section id="card-content">
+    <p id="card-description" textClamp #clamp="textClamp">
+      {{ project().description }}
+    </p>
+    <span class="read-more" (click)="clamp.toggle()">
+      {{ clamp.expanded() ? 'Show less' : 'Read more' }}
+    </span>
+    <img id="card-img" [src]="getImgPath()" [alt]="project().name">
+  </section>
+  <section id="card-links">
+    <a class="card-link" [href]="project().links.repo" target="_blank">
+      <fa-icon [icon]="icons.repo" title="See repository" />
+    </a>
+    @if (project().links.app) {
+    <a class="card-link" [href]="project().links.app" target="_blank">
+      <fa-icon [icon]="icons.app" title="See app live" />
+    </a>
+    }
+  </section>
+</article>

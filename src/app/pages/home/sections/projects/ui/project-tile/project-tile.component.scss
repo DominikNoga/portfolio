@@ -1,3 +1,59 @@
-@import 'app-mixins';
-@import 'app-variables';
+@import "app-mixins";
+@import "app-variables";
 
+article {
+  font-size: $font-size-md;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  aspect-ratio: 4/3;
+  background-color: $container-dark-color;
+
+  header {
+    font-size: $font-size-lg;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  #card {
+    &-content {
+      @include flex-layout();
+    }
+    &-description {
+      color: $font-tertiary;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      margin-bottom: 0;
+    }
+    &-img {
+      max-width: 100%;
+      aspect-ratio: 16/9;
+    }
+    &-links {
+      margin-top: $default-gap;
+      @include flex-layout(row, center, center, 1.5 * $default-gap);
+    }
+  }
+
+  .read-more {
+    color: $primary-font;
+    @include hover-effect() {
+      text-decoration: underline;
+    }
+  }
+
+  .card-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-3xl;
+    color: $link-color;
+    will-change: color, scale;
+    transition: color .3s ease-in, scale .3s ease-in;
+    @include hover-effect() {
+      scale: 1.1;
+      color: $link-color-hover;
+    }
+  }
+}

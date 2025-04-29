@@ -17,6 +17,11 @@
     @include rectangle($size, $size);
 }
 
+@mixin circle($size) {
+    border-radius: 50%;
+    @include square($size);
+}
+
 @mixin flex-layout($direction: column, $align-items: default, $justify-content: default, $gap: $default-gap) {
     display: flex;
     flex-direction: $direction;
